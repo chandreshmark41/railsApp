@@ -3,5 +3,5 @@ Rails.application.routes.draw do
 
   get '/pages', to: 'pages#home'
 
-  resources :articles, only: [:show, :index]
+  resources :articles, only: [:show, :index, :new, :create, :edit, :update]
 end
